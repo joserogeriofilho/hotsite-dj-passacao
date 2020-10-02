@@ -1,5 +1,15 @@
-.teste {
-    background-color: yellow;
-    width: 400px;
-    height: 400px;
+@import 'bootstrap/bootstrap.scss';
+
+.cover {
+    background-attachment: fixed;
+    background-image: url("../img/cover.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 50%;
+
+    @include media-breakpoint-up(xl){
+        background-color: red;
+        background-image: none;
+    }
 }
