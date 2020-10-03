@@ -1,9 +1,16 @@
-//@import 'bootstrap/bootstrap.scss';
+//@import '../bootstrap/bootstrap.scss';
 
 html, body {
   width: 100%;
   height: 100%;
   margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .cover {
@@ -17,21 +24,8 @@ html, body {
   }
 }
 
-//@include media-breakpoint-down(xs) {
-@media (max-width: 575.98px) {
-  .cover {
-    height: 50% !important;
-  }
-}
-
 .content {
   background-color: black;
-  width: 100%;
-  padding: 150 0 150 0;
-}
-
-@media (max-width: 575.98px) {
-  .content {
-    background-color: red;
-  }
+  color: white;
+  padding: 150px 0 150px 0;
 }
