@@ -7161,8 +7161,10 @@ html, body {
   margin: 0; }
 
 .cover {
+  color: white;
   width: 100%;
-  height: 50%; }
+  height: 50%;
+  position: relative; }
   @media (min-width: 576px) {
     .cover {
       height: 65%; } }
@@ -7171,7 +7173,6 @@ html, body {
     height: 100%;
     object-fit: cover; }
   .cover .cover-title {
-    color: white;
     font-size: 2.25rem;
     font-weight: 300;
     position: absolute;
@@ -7179,20 +7180,38 @@ html, body {
     left: 36px; }
     @media (min-width: 768px) {
       .cover .cover-title {
-        font-size: 4.875rem;
-        top: 100px;
-        left: 100px; } }
-    @media (min-width: 992px) {
+        font-size: 4.0rem;
+        top: 72px;
+        left: 72px; } }
+    @media (min-width: 1367px) {
       .cover .cover-title {
         font-size: 5.875rem;
         top: 100px;
         left: 100px; } }
+  .cover .cover-text {
+    opacity: 0.7;
+    margin: 0 0 0 0;
+    position: absolute;
+    bottom: 48px;
+    right: 56px; }
+    @media (min-width: 768px) {
+      .cover .cover-text {
+        width: 400px;
+        font-size: 1.5rem; } }
+    @media (min-width: 1367px) {
+      .cover .cover-text {
+        width: 500px;
+        font-size: 2.25rem; } }
 
 .cover-text {
-  margin-bottom: 72px; }
+  font-size: 1rem;
+  margin-bottom: 72px;
+  opacity: 0.7;
+  padding: 0 24px 0 24px; }
 
 .content {
   color: white;
+  font-size: 1rem;
   padding: 72px 0 72px 0; }
   @media (min-width: 576px) {
     .content {
