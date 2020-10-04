@@ -62,13 +62,13 @@ html, body {
 
     // Notebooks e tablets
     @media (min-width: 768px) and (max-width: 1366px) {
-      width: 500px;
+      min-width: 400px;
       font-size: 1.175rem;
     }
 
     // Desktop
     @media (min-width: 1367px) {
-      width: 500px;
+      min-width: 600px;
       font-size: 1.75rem;
     }
   }
@@ -84,7 +84,7 @@ html, body {
 .content {
   color: white;
   font-size: 1rem;
-  padding: 56px 0 56px 0;
+  padding: 56px 0 72px 0;
 
   @include media-breakpoint-up(sm) {
     padding: 150px 0 150px 0;

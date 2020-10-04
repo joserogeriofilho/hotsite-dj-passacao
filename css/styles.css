@@ -7200,11 +7200,11 @@ html, body {
     max-width: 400px; }
     @media (min-width: 768px) and (max-width: 1366px) {
       .cover .cover-text {
-        width: 500px;
+        min-width: 400px;
         font-size: 1.175rem; } }
     @media (min-width: 1367px) {
       .cover .cover-text {
-        width: 500px;
+        min-width: 600px;
         font-size: 1.75rem; } }
 
 .cover-text {
@@ -7216,7 +7216,7 @@ html, body {
 .content {
   color: white;
   font-size: 1rem;
-  padding: 56px 0 56px 0; }
+  padding: 56px 0 72px 0; }
   @media (min-width: 576px) {
     .content {
       padding: 150px 0 150px 0; } }
