@@ -7228,7 +7228,7 @@ html, body {
       margin: 0; } }
 
 .album {
-  width: 65vw;
+  width: 75%;
   height: fit-content;
   border-radius: 8px;
   box-shadow: 0 3px 5px black, 0 1px 2px black;
