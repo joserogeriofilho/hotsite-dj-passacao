@@ -3,7 +3,7 @@
 html, body {
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: #1C1C1C;
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
 }
@@ -52,10 +52,11 @@ html, body {
     position: absolute;
     bottom: 48px;
     right: 56px;
+    max-width: 400px;
 
     // Notebooks e tablets
-    @media (min-width: 768px) {
-      width: 400px;
+    @media (min-width: 768px) and (max-width: 1366px) {
+      width: 500px;
       font-size: 1.5rem;
     }
 
@@ -69,15 +70,15 @@ html, body {
 
 .cover-text {
   font-size: 1rem;
-  margin-bottom: 72px;
-  opacity: 0.7;
+  margin-bottom: 56px;
+  opacity: 0.65;
   padding: 0 24px 0 24px;
 }
 
 .content {
   color: white;
   font-size: 1rem;
-  padding: 72px 0 72px 0;
+  padding: 56px 0 56px 0;
 
   @include media-breakpoint-up(sm) {
     padding: 150px 0 150px 0;
@@ -86,7 +87,7 @@ html, body {
 
 .col-album {
   &:not(:first-child) {
-    margin: 72px 0 0 0;
+    margin: 56px 0 0 0;
 
     @include media-breakpoint-up(sm) {
       margin: 0;
@@ -95,12 +96,53 @@ html, body {
 }
 
 .album {
-  background-color: gray;
   width: 65vw;
-  height: 65vw;
+  height: fit-content;
+  border-radius: 8px;
+
+  &.album_1{
+    background-color: #141311;
+  }
+
+  &.album_2{
+    background-color: #1F121A;
+  }
 
   @include media-breakpoint-up(sm) {
-    width: 300px;
-    height: 300px;
+    width: 70%;
   }
+
+  // material shadow
+  box-shadow: 0 3px 5px rgba(0,0,0,1), 0 1px 2px rgba(0,0,0,1);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &.soon {
+    opacity: 0.35;
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,1), 0 10px 10px rgba(0,0,0,1);
+  }
+}
+
+.album-description {
+  padding: 16px 0 16px 0;
+}
+
+.soon_text {
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 0 16px 0 16px;
 }
