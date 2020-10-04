@@ -14,9 +14,15 @@ html, body {
   height: 50%;
   position:relative;
 
-  @include media-breakpoint-up(sm) {
-    height: 65%;
-  }
+    // Notebooks e tablets
+    @media (min-width: 768px) {
+      height: 75%;
+    }
+
+    // Desktop
+    @media (min-width: 1367px) {
+      height: 85%;
+    }
 
   .cover-image {
     width: 100%;
@@ -57,13 +63,13 @@ html, body {
     // Notebooks e tablets
     @media (min-width: 768px) and (max-width: 1366px) {
       width: 500px;
-      font-size: 1.5rem;
+      font-size: 1.175rem;
     }
 
     // Desktop
     @media (min-width: 1367px) {
       width: 500px;
-      font-size: 2.25rem;
+      font-size: 1.75rem;
     }
   }
 }
