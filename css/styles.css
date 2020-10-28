@@ -7303,4 +7303,7 @@ h2 {
 .footer {
   position: relative;
   background-color: #0F0F0F;
-  min-height: 400px; }
+  padding: 56px 0 72px 0; }
+  @media (min-width: 576px) {
+    .footer {
+      padding: 150px 0 150px 0; } }
