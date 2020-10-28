@@ -168,6 +168,10 @@ h2 {
     background-color: #1F121A;
   }
 
+  &.album_mixtape {
+    background-color: #0F0F0F;
+  }
+
   @include media-breakpoint-up(lg) {
     width: 70%;
   }

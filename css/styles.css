@@ -7274,6 +7274,8 @@ h2 {
     background-color: #141311; }
   .album.album_2 {
     background-color: #1F121A; }
+  .album.album_mixtape {
+    background-color: #0F0F0F; }
   @media (min-width: 992px) {
     .album {
       width: 70%; } }
