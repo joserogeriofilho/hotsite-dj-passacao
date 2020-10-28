@@ -7160,6 +7160,18 @@ html, body {
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0; }
 
+h2 {
+  margin-bottom: 56px; }
+  h2 .icon {
+    font-size: 1.75rem;
+    margin-right: 16px; }
+
+.padding-bottom-150px {
+  padding-bottom: 72px; }
+  @media (min-width: 576px) {
+    .padding-bottom-150px {
+      padding-bottom: 150px; } }
+
 .cover {
   color: white;
   width: 100%;
@@ -7207,6 +7219,27 @@ html, body {
         min-width: 600px;
         font-size: 1.75rem; } }
 
+.credits-text {
+  font-size: 0.75rem;
+  opacity: 0.3;
+  margin: 0 0 0 0;
+  line-height: 0.25rem; }
+  .credits-text a {
+    color: white;
+    text-decoration: none; }
+  .credits-text.text-center {
+    padding-top: 56px; }
+  .credits-text.text-left {
+    position: absolute;
+    left: 36px;
+    bottom: 24px; }
+    @media (min-width: 768px) {
+      .credits-text.text-left {
+        left: 72px; } }
+    @media (min-width: 1367px) {
+      .credits-text.text-left {
+        left: 100px; } }
+
 .cover-text {
   font-size: 1rem;
   margin-bottom: 56px;
@@ -7216,14 +7249,18 @@ html, body {
 .content {
   color: white;
   font-size: 1rem;
-  padding: 56px 0 72px 0; }
+  padding: 56px 0 72px 0;
+  position: relative; }
   @media (min-width: 576px) {
     .content {
       padding: 150px 0 150px 0; } }
 
+.mix-tape-img {
+  max-width: 100%; }
+
 .col-album:not(:first-child) {
-  margin: 56px 0 0 0; }
-  @media (min-width: 576px) {
+  margin: 72px 0 0 0; }
+  @media (min-width: 992px) {
     .col-album:not(:first-child) {
       margin: 0; } }
 
@@ -7237,7 +7274,7 @@ html, body {
     background-color: #141311; }
   .album.album_2 {
     background-color: #1F121A; }
-  @media (min-width: 576px) {
+  @media (min-width: 992px) {
     .album {
       width: 70%; } }
   .album img {
@@ -7260,3 +7297,8 @@ html, body {
   width: 100%;
   height: 80px;
   padding: 0 16px 0 16px; }
+
+.footer {
+  position: relative;
+  background-color: #0F0F0F;
+  min-height: 400px; }
